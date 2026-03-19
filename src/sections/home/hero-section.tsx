@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <Image
         src="/images/hero/hero1.jpg"
-        alt="Five7 Premium Men's Fashion - Stylish menswear collection"
+        alt="Five7 Premium Men&apos;s Fashion - Stylish menswear collection"
         fill
         priority
         className="object-cover object-center"

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Brands | Five7 — Premium Men's Fashion",
+  title: "Our Brands | Five7 — Premium Men&apos;s Fashion",
   description: "Discover the fashion brands developed by Five7. From premium casual wear (Five Seven) to youthful street style (FS Club) and timeless polo collections (FS Polo).",
 };
 

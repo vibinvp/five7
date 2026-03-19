@@ -64,7 +64,7 @@ export default function StoresPage() {
             </h1>
             <div className="mx-auto mt-8 h-1 w-24 bg-brand-red" />
             <p className="mx-auto mt-10 max-w-2xl text-lg text-white/90 md:text-2xl font-light">
-              Visit our retail stores across Kerala and explore our latest men's fashion collections.
+              Visit our retail stores across Kerala and explore our latest men&apos;s fashion collections.
             </p>
           </div>
         </div>

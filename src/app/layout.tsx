@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Five7 — Premium Men's Fashion | Kerala & Dubai",
+  title: "Five7 — Premium Men&apos;s Fashion | Kerala & Dubai",
   description:
-    "Five7 is a premium men's clothing brand from Kerala, India. Explore our fashion brands, retail stores, and export operations to Dubai & GCC markets.",
+    "Five7 is a premium men&apos;s clothing brand from Kerala, India. Explore our fashion brands, retail stores, and export operations to Dubai & GCC markets.",
   keywords: [
     "mens clothing kerala",
     "menswear kerala brand",
