@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Five7 — Premium Men&apos;s Fashion | Kerala & Dubai",
+  title: "Five7 | Premium Men's Fashion",
   description:
-    "Five7 is a premium men&apos;s clothing brand from Kerala, India. Explore our fashion brands, retail stores, and export operations to Dubai & GCC markets.",
+    "Experience premium men's fashion with Five7. Discover our high-quality collections and retail locations across Kerala and beyond.",
   keywords: [
     "mens clothing kerala",
     "menswear kerala brand",
@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "FS Club",
     "FS Polo",
   ],
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

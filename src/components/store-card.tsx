@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 interface StoreCardProps {
   name: string;
@@ -18,15 +21,23 @@ export default function StoreCard({
   image,
   mapLink,
 }: StoreCardProps) {
+  const [imgSrc, setImgSrc] = useState(image);
+  const fallbackSrc = "/images/stores/store.jpg";
+
+  useEffect(() => {
+    setImgSrc(image);
+  }, [image]);
+
   return (
     <div className="group overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl border border-brand-light">
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
-          src={image}
+          src={imgSrc}
           alt={`${name} - ${location}`}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, 50vw"
+          onError={() => setImgSrc(fallbackSrc)}
         />
         <div className="absolute inset-0 bg-black/5" />
       </div>
