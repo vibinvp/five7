@@ -19,17 +19,17 @@ const collections = [
   },
   {
     name: "Jeans",
-    image: "/images/collections/shirts.jpg",
+    image: "/images/collections/jeans.jpg",
     category: "Denim Collection",
   },
   {
     name: "Casual Wear",
-    image: "/images/collections/polos.jpg",
+    image: "/images/collections/casual.jpg",
     category: "Weekend Ready",
   },
   {
     name: "Formal Wear",
-    image: "/images/collections/tshirts.jpg",
+    image: "/images/collections/formal.jpg",
     category: "Business & Events",
   },
 ];

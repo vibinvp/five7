@@ -21,7 +21,7 @@ export default function CollectionCard({
       href={href}
       className="group relative block overflow-hidden bg-brand-black"
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[3/4] md:aspect-[4/5]">
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
           src={image}
           alt={`${name} collection - Five7`}

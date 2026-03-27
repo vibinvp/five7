@@ -4,22 +4,40 @@ import CollectionCard from "@/components/collection-card";
 
 const collections = [
   {
-    name: "Polos",
-    image: "/images/collections/polos.jpg",
-    description: "Premium polo shirts designed for timeless style and comfort.",
-    href: "/collections/polos",
-  },
-  {
     name: "Shirts",
     image: "/images/collections/shirts.jpg",
     description: "Modern shirts crafted with high quality fabrics for everyday wear.",
-    href: "/collections/shirts",
+    href: "/collections",
+  },
+  {
+    name: "Polos",
+    image: "/images/collections/polos.jpg",
+    description: "Premium polo shirts designed for timeless style and comfort.",
+    href: "/collections",
   },
   {
     name: "T-Shirts",
     image: "/images/collections/tshirts.jpg",
     description: "Comfortable and stylish t-shirts for casual and modern looks.",
-    href: "/collections/t-shirts",
+    href: "/collections",
+  },
+  {
+    name: "Jeans",
+    image: "/images/collections/jeans.jpg",
+    description: "Premium denim crafted for the perfect fit and lasting style.",
+    href: "/collections",
+  },
+  {
+    name: "Casual Wear",
+    image: "/images/collections/casual.jpg",
+    description: "Relaxed and stylish clothing for your everyday lifestyle.",
+    href: "/collections",
+  },
+  {
+    name: "Formal Wear",
+    image: "/images/collections/formal.jpg",
+    description: "Sophisticated formal attire for business and special occasions.",
+    href: "/collections",
   },
 ];
 

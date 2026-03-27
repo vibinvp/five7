@@ -47,16 +47,16 @@ export default function Navbar() {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="mx-auto flex h-[70px] max-w-7xl items-center justify-between px-6 lg:px-10">
+      <div className="mx-auto flex h-[80px] max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
         <Link href="/" aria-label="Five7 — Home">
           <Image
             src="/images/logo/five7-logo.png"
             alt="Five7 Logo"
-            width={110}
-            height={40}
+            width={150}
+            height={55}
             priority
-            className="h-auto w-[100px] object-contain sm:w-[110px]"
+            className="h-auto w-[120px] object-contain sm:w-[150px]"
           />
         </Link>
 
@@ -108,7 +108,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 top-[70px] z-40 bg-white transition-all duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-0 top-[80px] z-40 bg-white transition-all duration-300 ease-in-out lg:hidden ${
           mobileMenuOpen
             ? "pointer-events-auto translate-x-0 opacity-100"
             : "pointer-events-none translate-x-full opacity-0"

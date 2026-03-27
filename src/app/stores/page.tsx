@@ -4,39 +4,20 @@ import StoreCard from "@/components/store-card";
 
 const stores = [
   {
-    city: "Kochi",
-    image: "/images/stores/kochi.jpg",
-    address: "MG Road, Kochi, Kerala",
-    phone: "+91 98765 43210",
-    mapLink: "https://maps.google.com/?q=MG+Road,+Kochi,+Kerala",
+    name: "Five Seven Gents Wear",
+    location: "Karinkallathani",
+    image: "/images/stores/karinkallathani.jpg",
+    address: "Karinkallathani, Kerala",
+    phone: "+91 85906 55757",
+    mapLink: "https://share.google/YSTR4nvrYCId1aNSg",
   },
   {
-    city: "Calicut",
-    image: "/images/stores/calicut.jpg",
-    address: "SM Street, Calicut, Kerala",
-    phone: "+91 98765 43210",
-    mapLink: "https://maps.google.com/?q=SM+Street,+Calicut,+Kerala",
-  },
-  {
-    city: "Malappuram",
-    image: "/images/stores/malappuram.jpg",
-    address: "Down Hill, Malappuram, Kerala",
-    phone: "+91 98765 43210",
-    mapLink: "https://maps.google.com/?q=Down+Hill,+Malappuram,+Kerala",
-  },
-  {
-    city: "Kannur",
-    image: "/images/stores/kannur.jpg",
-    address: "Talap, Kannur, Kerala",
-    phone: "+91 98765 43210",
-    mapLink: "https://maps.google.com/?q=Talap,+Kannur,+Kerala",
-  },
-  {
-    city: "Trivandrum",
-    image: "/images/stores/trivandrum.jpg",
-    address: "MG Road, Trivandrum, Kerala",
-    phone: "+91 98765 43210",
-    mapLink: "https://maps.google.com/?q=MG+Road,+Trivandrum,+Kerala",
+    name: "Five Seven Gents Wear",
+    location: "Mannarkkad",
+    image: "/images/stores/mannarkkad.jpg",
+    address: "Mannarkkad, Kerala",
+    phone: "+91 90617 85757",
+    mapLink: "https://share.google/Mt5rij8bw8obdkTIo",
   },
 ];
 
@@ -54,17 +35,17 @@ export default function StoresPage() {
           sizes="100vw"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
         
         {/* Content */}
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div className="container mx-auto px-6">
-            <h1 className="font-heading text-5xl font-bold text-white md:text-7xl lg:text-8xl">
+            <h1 className="font-heading text-6xl font-bold text-white md:text-8xl lg:text-9xl tracking-tight">
               Our Stores
             </h1>
-            <div className="mx-auto mt-8 h-1 w-24 bg-brand-red" />
-            <p className="mx-auto mt-10 max-w-2xl text-lg text-white/90 md:text-2xl font-light">
-              Visit our retail stores across Kerala and explore our latest men&apos;s fashion collections.
+            <div className="mx-auto mt-8 h-[2px] w-24 bg-brand-red" />
+            <p className="mx-auto mt-10 max-w-2xl text-xl text-white/90 md:text-2xl font-light tracking-wide uppercase">
+              Retail Presence in Kerala
             </p>
           </div>
         </div>
@@ -73,20 +54,22 @@ export default function StoresPage() {
       {/* SECTION 2 — STORES GRID */}
       <section className="py-24 md:py-32 lg:py-40 bg-brand-light">
         <div className="container mx-auto px-6">
-          <div className="mb-20">
-            <h2 className="font-heading text-3xl font-bold text-brand-black md:text-4xl">
+          <div className="mb-20 text-center">
+            <h2 className="font-heading text-4xl font-bold text-brand-black md:text-5xl">
               Retail Locations
             </h2>
-            <p className="mt-4 text-brand-gray max-w-xl">
+            <div className="mx-auto mt-6 h-1 w-12 bg-brand-red" />
+            <p className="mt-8 text-brand-gray max-w-xl mx-auto text-lg">
               Experience the touch and feel of premium fashion at our modern retail outlets.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
             {stores.map((store) => (
               <StoreCard
-                key={store.city}
-                city={store.city}
+                key={store.location}
+                name={store.name}
+                location={store.location}
                 image={store.image}
                 address={store.address}
                 phone={store.phone}
