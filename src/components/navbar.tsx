@@ -51,12 +51,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" aria-label="Five7 — Home">
           <Image
-            src="/images/logo/five7-logo.png"
+            src="/images/logo/logo1.png"
             alt="Five7 Logo"
-            width={150}
-            height={55}
+            width={280}
+            height={100}
             priority
-            className="h-auto w-[120px] object-contain sm:w-[150px]"
+            className="h-auto w-[200px] object-contain sm:w-[280px]"
           />
         </Link>
 

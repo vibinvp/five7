@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const stores = [
   {
-    city: "Kochi",
-    address: "MG Road, Ernakulam, Kochi, Kerala 682016",
-    phone: "+91 484 237 1234",
-    image: "/images/stores/kochi.jpg",
+    name: "Five Seven Gents Wear – Karinkallathani",
+    address: "Karinkallathani, Kerala",
+    phone: "+91 85906 55757",
+    image: "/images/stores/karinkallathani.jpg",
   },
   {
-    city: "Calicut",
-    address: "SM Street, Kozhikode, Kerala 673001",
-    phone: "+91 495 276 5678",
-    image: "/images/stores/calicut.jpg",
+    name: "Five Seven Gents Wear – Mannarkkad",
+    address: "Mannarkkad, Kerala",
+    phone: "+91 90617 85757",
+    image: "/images/stores/mannarkkad.jpg",
   },
 ];
 
@@ -58,12 +58,12 @@ export default function StoresSection() {
         {/* Stores Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {stores.map((store) => (
-            <div key={store.city} className="group">
+            <div key={store.name} className="group">
               {/* Image */}
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
                   src={store.image}
-                  alt={`Five7 retail store in ${store.city}, Kerala`}
+                  alt={store.name}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -73,7 +73,7 @@ export default function StoresSection() {
               {/* Store Info */}
               <div className="mt-6 border-l-2 border-brand-red pl-6">
                 <h3 className="font-heading text-2xl font-bold text-brand-black">
-                  {store.city}
+                  {store.name}
                 </h3>
                 <p className="mt-2 text-sm text-brand-gray">{store.address}</p>
                 <a

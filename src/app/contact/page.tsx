@@ -102,7 +102,7 @@ export default function ContactPage() {
               </h2>
             </div>
 
-            <form className="space-y-8">
+            <form action="https://formspree.io/f/mdapakel" method="POST" className="space-y-8">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-xs font-bold tracking-widest text-brand-gray uppercase ml-1">
@@ -111,8 +111,10 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Enter your name"
                     className="w-full border-b border-brand-gray-light bg-transparent py-4 focus:border-brand-red focus:outline-none transition-colors text-brand-black"
+                    required
                   />
                 </div>
                 <div className="space-y-2">
@@ -122,8 +124,10 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="Enter your email"
                     className="w-full border-b border-brand-gray-light bg-transparent py-4 focus:border-brand-red focus:outline-none transition-colors text-brand-black"
+                    required
                   />
                 </div>
               </div>
@@ -135,6 +139,7 @@ export default function ContactPage() {
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   placeholder="Enter your phone number"
                   className="w-full border-b border-brand-gray-light bg-transparent py-4 focus:border-brand-red focus:outline-none transition-colors text-brand-black"
                 />
@@ -146,9 +151,11 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   placeholder="How can we help you?"
                   className="w-full border-b border-brand-gray-light bg-transparent py-4 focus:border-brand-red focus:outline-none transition-colors text-brand-black resize-none"
+                  required
                 />
               </div>
 

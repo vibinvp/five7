@@ -31,11 +31,11 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" aria-label="Five7 — Home">
               <Image
-                src="/images/logo/five7-logo.png"
+                src="/images/logo/logo1.png"
                 alt="Five7 Logo"
-                width={120}
-                height={44}
-                className="h-auto w-[110px] brightness-0 invert object-contain"
+                width={240}
+                height={85}
+                className="h-auto w-[200px] brightness-0 invert object-contain lg:w-[240px]"
               />
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60 font-[family-name:var(--font-inter)]">
